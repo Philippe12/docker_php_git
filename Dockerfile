@@ -5,3 +5,5 @@ RUN apt-get update && apt-get install -y git\
 
 RUN docker-php-ext-install ldap
 RUN docker-php-ext-install pdo pdo_mysql
+
+RUN git clone $git_clone /code
