@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y git\
 RUN docker-php-ext-install ldap
 RUN docker-php-ext-install pdo pdo_mysql
 
-RUN echo session.save_path = "/sessions/" >> /usr/local/etc/php-fpm.d/docker.conf
+#RUN echo session.save_path = "/sessions/" >> /usr/local/etc/php-fpm.d/docker.conf
