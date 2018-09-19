@@ -11,4 +11,6 @@ RUN docker-php-ext-install zip bz2
     
 RUN git config --global http.sslverify "false"
 
+RUN apt-get update && apt-get install -y rename
+
 COPY php.ini /usr/local/etc/php/php.ini
