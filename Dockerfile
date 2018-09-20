@@ -13,4 +13,7 @@ RUN git config --global http.sslverify "false"
 
 RUN apt-get update && apt-get install -y rename
 
+RUN apt-get update && apt-get install pdftk
+RUN apt-get update && apt-get install -y libreoffice
+
 COPY php.ini /usr/local/etc/php/php.ini
