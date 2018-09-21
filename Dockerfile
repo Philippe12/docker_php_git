@@ -19,4 +19,6 @@ RUN apt-get install -y default-jre-headless
 RUN apt-get install -y pdftk
 RUN apt-get install -y libreoffice
 
+RUN chmod 777 -R /var/www
+
 COPY php.ini /usr/local/etc/php/php.ini
