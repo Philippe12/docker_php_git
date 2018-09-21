@@ -19,4 +19,6 @@ RUN apt-get install -y default-jre-headless
 RUN apt-get install -y pdftk
 RUN apt-get install -y libreoffice
 
+ENV PHP_EXTRA_CONFIGURE_ARGS "--allow-to-run-as-root --enable-fpm --with-fpm-user=root --with-fpm-group=root --disable-cgi"
+
 COPY php.ini /usr/local/etc/php/php.ini
