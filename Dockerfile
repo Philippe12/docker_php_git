@@ -12,7 +12,7 @@ RUN docker-php-ext-install zip bz2
     
 RUN git config --global http.sslverify "false"
 RUN cp /root/.gitconfig /var/www/.gitconfig
-RUN chown ww-data:www-data /var/www/.gitconfig
+RUN chown www-data:www-data /var/www/.gitconfig
 
 RUN apt-get install -y rename
 
