@@ -26,5 +26,3 @@ RUN apt-get install -y libreoffice
 RUN apt-get install -y ssmtp
 
 RUN chmod 777 -R /var/www
-
-COPY php.ini /usr/local/etc/php/php.ini
