@@ -23,6 +23,6 @@ RUN apt-get install -y default-jre-headless
 RUN apt-get install -y pdftk
 RUN apt-get install -y libreoffice
 
-RUN apt-get install -y ssmtp
+RUN apt-get install -y sendmail
 
 RUN chmod 777 -R /var/www
