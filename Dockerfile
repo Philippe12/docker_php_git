@@ -8,6 +8,9 @@ RUN docker-php-ext-install ldap
 RUN docker-php-ext-install pdo pdo_mysql
 
 RUN apt-get install -y libz-dev libbz2-dev
+RUN apt-get install -y libxml2-dev
+RUN docker-php-ext-install soap
+RUN apt-get install -y libzip-dev
 RUN docker-php-ext-install zip bz2
 
 RUN docker-php-ext-install sockets
