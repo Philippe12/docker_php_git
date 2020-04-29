@@ -31,4 +31,6 @@ RUN apt-get install -y sendmail
 RUN apt-get install -y rsync
 RUN apt-get install -y default-mysql-client
 
+RUN apt-get install -y wkhtmltopdf
+
 RUN chmod 777 -R /var/www
