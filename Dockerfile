@@ -31,6 +31,10 @@ RUN apt-get install -y sendmail
 RUN apt-get install -y rsync
 RUN apt-get install -y default-mysql-client
 
-RUN apt-get install -y wkhtmltopdf
+#RUN apt-get install -y wkhtmltopdf
+RUN apt-get install -y wget
+
+RUN wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb && \
+    apt install -y ./wkhtmltox_0.12.5-1.stretch_amd64.deb
 
 RUN chmod 777 -R /var/www
